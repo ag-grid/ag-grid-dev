@@ -12,7 +12,6 @@ var liveReload = require('gulp-livereload');
 var replace = require('gulp-replace');
 var gulpIf = require('gulp-if');
 
-gulp.task('watchDocs', ['copyFromDocs'], watchTask);
 gulp.task('default', ['copyFromDocs','copyFromBootstrap','copyFromFontAwesome','webpack'], watchTask);
 
 gulp.task('copyFromGrid', copyFromGrid);
